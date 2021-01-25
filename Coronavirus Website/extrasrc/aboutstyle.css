@@ -1,35 +1,39 @@
 /* section about */
 .text-center {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 .text-white {
-    color: white !important;
+  color: white !important;
 }
 
 .contentabout {
-    background-color: var(--nav-color);
-    margin: 0.8rem;
-    padding: 0.8rem;
-    overflow-wrap: break-word;
-    border-radius: 10px;
+  background-color: var(--nav-color);
+  margin: 0.8rem;
+  padding: 0.8rem;
+  overflow-wrap: break-word;
+  border-radius: 10px;
 }
 header a {
-    font-size: 1.2rem !important;
-    color: #a5a5a5;
+  font-size: 1.2rem !important;
+  color: #a5a5a5;
 }
 .contentheadline {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .contenttext {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
-.text-xs{
+.text-xs {
   font-size: 12px !important;
 }
 
 li {
-    font-size: 12px;
+  font-size: 12px;
+}
+
+.text-green-300 {
+  color: rgba(0, 255, 128, 0.801);
 }
