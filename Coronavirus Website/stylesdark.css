@@ -1,0 +1,80 @@
+:root {
+    --bg-color:#171624;
+    --color2: #151829;
+    --textgraycolor: #6c757d;
+    --yellowmod: #28a745;
+    --nav-color: #171624;
+    --shadow: -3px -3px 3px 0 rgba(255, 255, 255, 0.322),
+        5px 5px 5px 0 rgba(0, 0, 0, 2);
+
+    --btndarkmode: #fff;
+
+    --text-confirmed: #ff073a;
+    --barcolor: #6c757d;
+    --navbrand: #02dac5;
+    --text-vaccinated:#bb86fc;
+    --working-vaccines: #01dac5;
+    --btnboxshadow: 3px 3px 0px #ff008d, -3px -3px 0px #00ffe7;
+    --btnorange: #f8a825;
+    --last-updated: #e5e5e5;
+    --table-color: #1f1f1f;
+    --table-header: #a5a5a5;
+    --table-nchild: #131212;
+    --table-lights: 3px 3px 0px #ff008d, -3px 2px 0px #00ffe7;
+    --table-confblue: #00dbff;
+    --table-recoyellow: #fff700;
+    --table-confdark: black;
+    --searchcolor: #02dac5;
+    --text-tests: rgb(101, 221, 155);
+    --dropdownmenu: #fbf201;
+}
+
+.light-mode {
+    --bg-color: rgb(184, 184, 214);
+    --color2: #e6e6f0b7;
+    --textgraycolor: #0a0a0a;
+    --yellowmod: #ff7300;
+    --nav-color: #6200ed;
+    --shadow: -6px -6px 14px rgba(255, 255, 255, 0.692),
+        -6px -6px 10px rgba(255, 255, 255, 0.733),
+        6px 6px 8px rgba(255, 255, 255, 0.014),
+        6px 6px 10px rgba(0, 0, 0, 0.377);
+
+    --btndarkmode: rgb(0, 0, 0);
+
+    --text-confirmed: #0066ff;
+    --barcolor: #e6e6f0ce;
+    --navbrand: #ffffff;
+    --text-vaccinated: rgb(0, 180, 30);
+    --working-vaccines: #fe0265;
+    --btnboxshadow: 3px 3px 0px #ff008d, -3px -3px 0px #3700b3;
+    --btnorange: #000000;
+    --last-updated: #3700b3;
+    --table-color: #e6e6f0b7;
+    --table-header: #000000;
+    --table-nchild: #b9b9c9b7;
+    --table-lights: 3px 3px 0px #ff008d, -3px 2px 0px #3700b3;
+    --table-confblue: #0400ff;
+    --table-recoyellow: #8c00ff;
+    --table-confdark: rgb(77, 77, 77);
+    --searchcolor: #ff008d;
+    --text-tests: rgb(0, 107, 54);
+    --dropdownmenu: #ff003c;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Poppins',
+        sans-serif;
+}

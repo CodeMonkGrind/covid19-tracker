@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180201110-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180201110-1');
+  </script>
+
+
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coronavirus Update (Live) Confirmed Deaths from COVID-19 Virus Pandemic</title>
+  <meta name="description" content="Live coronavirus dashboard">
+  <meta name="keywords"
+    content="coronavirus, covid-19, tracker, dashboard, stats, prevention, trends, vaccine-tracker, vaccines, coronastats">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ncov2021.com/">
+  <meta property="og:title" content="Coronavirus Tracker">
+  <meta property="og:description"
+    content="Live coronavirus statistics and Vaccine Tracker.Get live details of confirmed cases,tests and deaths, vaccines distributed.">
+  <meta property="og:image"
+    content="https://media.discordapp.net/attachments/735527190283812967/769173943143104562/image.jpg?width=664&height=443">
+
+  <!-- link tags -->
+  <link rel="icon" type="image/png" sizes="64x64" href="./assets/img/coronavirus.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../assets/img/favicon-32x32.png" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3bc19e2bf5.js"></script>
+  <link rel="stylesheet" href="https://cdn.myrcon.net/fontawesome-pro-5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+  <!-- css links -->
+  <link rel="stylesheet" href="./stylo.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./stylesdark.css">
+  <link rel="stylesheet" href="./stylesmobile.css">
+  <link rel="manifest" href="./manifest.json">
+
+
+</head>
+
+
+
+
+<body>
+
+  <!-- header start -->
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
+
+        <div class="flex">
+          <div class="hide-mobile">
+            <a href="./index.html"><img src="./assets/img/coronavirus.png" width="44px"></a>
+
+          </div>
+          <div class="align-middle">
+            <a class="navbar-brand" href="#">
+              &nbsp; COVID19</a>
+          </div>
+        </div>
+
+        <button class="navbar-toggler text-xs" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav text-center ml-3">
+
+
+
+            <li class="nav-item active hide-mobile  mt-2">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+            <li class="nav-item active hide-desktop mt-2">
+              <a class="nav-link" href="./index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+            <li class="nav-item mt-2">
+              <a class="nav-link" href="./extrasrc/about.html">About</a>
+            </li>
+
+            <!-- <div style="margin-top: 3px;">
+                            <a href="https://ko-fi.com/spaceexplained/posts#linkModal">
+                                <script type="text/javascript" src="https://ko-fi.com/widgets/widget_2.js"></script>
+                                <script type="text/javascript">
+                                    kofiwidget2.init('Buy Me a Coffee', '#293dff', 'spaceexplained');
+                                    kofiwidget2.draw();
+                                </script>
+                            </a>
+                        </div> -->
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main tag -->
+  <main>
+
+
+    <section>
+      <div id="MyClockDisplay" class="clock hide-desktop mb-10 animated animatedFadeInUp fadeInUp" onload="showTime()"
+        style="animation-delay: 0ms;"></div>
+    </section>
+
+
+    <section class="quickstats sectionbg mx-1 mt-1 rounded">
+      <div class="mobflex">
+
+        <div class="bgcolorconf">
+          <p class="text-confirmed animated animatedFadeInUp fadeInUp" style="animation-delay: 500ms;">Confirmed</p>
+          <div class="newgray">
+            <h3 class="level1font colorconf mb-2 animated animatedFadeInUp fadeInUp" id="total_confirmed" style="animation-delay: 1000ms;"
+             >
+              <p>Loading</p>
+            </h3>
+            <svg class="animated animatedFadeInUp fadeInUp" style="animation-delay: 500ms;" width="100%" height="75"
+              viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
+              <path fill="none" stroke="#ff073a99" stroke-width="2.5"
+                d="M5,10C6.416666666666667,10.559177253600906,7.833333333333333,11.118354507201811,9.25,11.621136106166045C10.666666666666666,12.123917705130278,12.083333333333334,12.086320602039164,13.5,13.016689593785404C14.916666666666666,13.947058585531645,16.333333333333332,17.82656983330636,17.75,17.82656983330636C19.166666666666668,17.82656983330636,20.583333333333332,15.586037384690078,22,15.586037384690078C23.416666666666668,15.586037384690078,24.833333333333332,21.016588444732157,26.25,21.016588444732157C27.666666666666668,21.016588444732157,29.083333333333332,16.5117332901764,30.5,15.31967146787506C31.916666666666668,14.127609645573715,33.333333333333336,13.531578734423043,34.75,13.531578734423043C36.166666666666664,13.531578734423043,37.583333333333336,17.251780223337107,39,17.251780223337107C40.416666666666664,17.251780223337107,41.833333333333336,15.807796569024116,43.25,15.807796569024116C44.666666666666664,15.807796569024116,46.083333333333336,17.636460187732645,47.5,18.375869881857906C48.91666666666667,19.11527957598317,50.333333333333336,19.904393914872955,51.75000000000001,20.24425473377569C53.16666666666667,20.584115552678426,54.583333333333336,20.754045962129794,56,20.754045962129794C57.416666666666664,20.754045962129794,58.833333333333336,19.566232400064735,60.25,18.67537222851594C61.666666666666664,17.784512056967145,63.083333333333336,15.408884932837033,64.5,15.408884932837033C65.91666666666667,15.408884932837033,67.33333333333333,18.4026339213465,68.75,18.4026339213465C70.16666666666667,18.4026339213465,71.58333333333333,18.130108027188864,73,17.98205615795436C74.41666666666667,17.834004288719857,75.83333333333333,17.51432270593947,77.25,17.51432270593947C78.66666666666667,17.51432270593947,80.08333333333333,19.652259669849496,81.5,20.99874575173977C82.91666666666667,22.34523183363004,84.33333333333333,25.59323919728111,85.75,25.59323919728111C87.16666666666667,25.59323919728111,88.58333333333333,23.412607217996438,90,21.23197523871177">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="bgcoloractive" style="animation-delay: 750ms;">
+          <p class="text-active animated animatedFadeInUp fadeInUp" style="animation-delay: 750ms;">Active</p>
+          <div class="newgray">
+            <h3 class="level1font coloractive mb-2 animated animatedFadeInUp fadeInUp" style="animation-delay: 1250ms;">
+              23,000,00
+            </h3>
+            <svg class="animated animatedFadeInUp fadeInUp" style="animation-delay: 750ms;" width="100%" height="75"
+              viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
+              <path fill="none" stroke="#007bff99" stroke-width="2.5"
+                d="M5,54.84554794520549C6.416666666666667,51.03250570776256,7.833333333333333,47.219463470319624,9.25,45.03595890410958C10.666666666666666,42.85245433789953,12.083333333333334,41.7445205479452,13.5,41.7445205479452C14.916666666666666,41.7445205479452,16.333333333333332,49.125684931506854,17.75,49.125684931506854C19.166666666666668,49.125684931506854,20.583333333333332,44.03150684931507,22,44.03150684931507C23.416666666666668,44.03150684931507,24.833333333333332,63.10650684931506,26.25,63.10650684931506C27.666666666666668,63.10650684931506,29.083333333333332,58.40108447488585,30.5,56.708219178082196C31.916666666666668,55.01535388127854,33.333333333333336,54.207077625570776,34.75,52.94931506849315C36.166666666666664,51.69155251141552,37.583333333333336,49.16164383561644,39,49.16164383561644C40.416666666666664,49.16164383561644,41.833333333333336,54.138356164383566,43.25,54.138356164383566C44.666666666666664,54.138356164383566,46.083333333333336,48.67020547945206,47.5,48.67020547945206C48.91666666666667,48.67020547945206,50.333333333333336,48.843607305936075,51.75000000000001,49.19041095890411C53.16666666666667,49.537214611872145,54.583333333333336,73,56,73C57.416666666666664,73,58.833333333333336,55.43727168949772,60.25,49.96952054794521C61.666666666666664,44.5017694063927,63.083333333333336,40.19349315068494,64.5,40.19349315068494C65.91666666666667,40.19349315068494,67.33333333333333,47.80958904109589,68.75,47.80958904109589C70.16666666666667,47.80958904109589,71.58333333333333,44.239269406392694,73,43.964383561643835C74.41666666666667,43.68949771689498,75.83333333333333,43.62876712328767,77.25,43.55205479452055C78.66666666666667,43.47534246575343,80.08333333333333,43.43698630136986,81.5,43.43698630136986C82.91666666666667,43.43698630136986,84.33333333333333,56.53801369863014,85.75,56.53801369863014C87.16666666666667,56.53801369863014,88.58333333333333,51.477397260273975,90,46.41678082191782">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="bgcolorreco">
+          <p class="text-recovered animated animatedFadeInUp fadeInUp" style="animation-delay: 1000ms;">Recovered</p>
+          <div class="recovered newgray">
+            <h3 class="level1font  colorreco  mb-2  animated animatedFadeInUp fadeInUp" id="total_recovered" style="animation-delay: 1500ms;"
+              >
+<p>Loading</p>
+            </h3>
+            <svg class="animated animatedFadeInUp fadeInUp" style="animation-delay: 1000ms;" width="100%" height="75"
+              viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
+              <path fill="none" stroke="#28a74599" stroke-width="2.5"
+                d="M5,10C6.416666666666667,12.154978962131835,7.833333333333333,14.309957924263669,9.25,15.670757363253852C10.666666666666666,17.031556802244033,12.083333333333334,17.661290322580644,13.5,18.164796633941094C14.916666666666666,18.668302945301544,16.333333333333332,18.729488078541376,17.75,18.920056100981768C19.166666666666668,19.11062412342216,20.583333333333332,19.30820476858345,22,19.30820476858345C23.416666666666668,19.30820476858345,24.833333333333332,16.352734922861153,26.25,15.389901823281908C27.666666666666668,14.427068723702666,29.083333333333332,13.531206171107996,30.5,13.531206171107996C31.916666666666668,13.531206171107996,33.333333333333336,13.595021037868163,34.75,13.722650771388498C36.166666666666664,13.850280504908833,37.583333333333336,18.390953716690042,39,18.390953716690042C40.416666666666664,18.390953716690042,41.833333333333336,16.424964936886397,43.25,16.424964936886397C44.666666666666664,16.424964936886397,46.083333333333336,18.779453015427773,47.5,19.512272089761574C48.91666666666667,20.245091164095374,50.333333333333336,20.821879382889197,51.75000000000001,20.821879382889197C53.16666666666667,20.821879382889197,54.583333333333336,10.77524544179523,56,10.77524544179523C57.416666666666664,10.77524544179523,58.833333333333336,18.208625525946697,60.25,19.24088359046283C61.666666666666664,20.27314165497896,63.083333333333336,20.78927068723703,64.5,20.78927068723703C65.91666666666667,20.78927068723703,67.33333333333333,19.933029453015426,68.75,19.933029453015426C70.16666666666667,19.933029453015426,71.58333333333333,21.259467040673208,73,21.259467040673208C74.41666666666667,21.259467040673208,75.83333333333333,21.03015427769986,77.25,21.03015427769986C78.66666666666667,21.03015427769986,80.08333333333333,23.89446002805049,81.5,23.89446002805049C82.91666666666667,23.89446002805049,84.33333333333333,21.957924263674613,85.75,21.957924263674613C87.16666666666667,21.957924263674613,88.58333333333333,22.394985974754555,90,22.8320476858345">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="bgcolordeath">
+          <p class="text-deceased animated animatedFadeInUp fadeInUp" style="animation-delay: 1250ms;">Deceased</p>
+          <div class="deceased newgray">
+            <h3 class="level1font  colordeath  mb-2 animated animatedFadeInUp fadeInUp" id="total_deaths" style="animation-delay: 1750ms;"
+              >
+<p>Loading</p>
+            </h3>
+            <svg class="animated animatedFadeInUp fadeInUp" style="animation-delay: 1250ms;" width="100%" height="75"
+              viewBox="0 0 100 75" preserveAspectRatio="xMidYMid meet">
+              <path fill="none" stroke="#6c757d99" stroke-width="2.5"
+                d="M5,12.056379821958458C6.416666666666667,11.02818991097923,7.833333333333333,10,9.25,10C10.666666666666666,10,12.083333333333334,18.038575667655785,13.5,18.038575667655785C14.916666666666666,18.038575667655785,16.333333333333332,15.390207715133531,17.75,15.327893175074184C19.166666666666668,15.265578635014837,20.583333333333332,15.234421364985163,22,15.234421364985163C23.416666666666668,15.234421364985163,24.833333333333332,18.132047477744806,26.25,18.132047477744806C27.666666666666668,18.132047477744806,29.083333333333332,15.623887240356083,30.5,14.86053412462908C31.916666666666668,14.097181008902076,33.333333333333336,13.551928783382785,34.75,13.551928783382785C36.166666666666664,13.551928783382785,37.583333333333336,18.256676557863507,39,18.692878338278934C40.416666666666664,19.12908011869436,41.833333333333336,18.91097922848665,43.25,19.347181008902076C44.666666666666664,19.783382789317503,46.083333333333336,21.247774480712167,47.5,21.310089020771514C48.91666666666667,21.37240356083086,50.333333333333336,21.341246290801188,51.75000000000001,21.403560830860535C53.16666666666667,21.465875370919882,54.583333333333336,22.805637982195844,56,22.805637982195844C57.416666666666664,22.805637982195844,58.833333333333336,16.729970326409497,60.25,16.729970326409497C61.666666666666664,16.729970326409497,63.083333333333336,20.749258160237385,64.5,20.749258160237385C65.91666666666667,20.749258160237385,67.33333333333333,19.72106824925816,68.75,19.72106824925816C70.16666666666667,19.72106824925816,71.58333333333333,19.845697329376854,73,20.094955489614243C74.41666666666667,20.344213649851632,75.83333333333333,20.59347181008902,77.25,21.590504451038576C78.66666666666667,22.587537091988132,80.08333333333333,27.479228486646882,81.5,27.479228486646882C82.91666666666667,27.479228486646882,84.33333333333333,26.762611275964396,85.75,25.983679525222556C87.16666666666667,25.204747774480715,88.58333333333333,24.00519287833828,90,22.805637982195844">
+              </path>
+            </svg>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- last updated spinner -->
+    <section class="ml-3 mb-4 mt-10 last_updated animated animatedFadeInUp fadeInUp" style="animation-delay:2000ms;"">
+      <p class=" newgray"> Last updated : <span id="last_updated"><i class="fa fa-spinner fa-spin"></i></span>
+      </p>
+    </section>
+
+    <section class="hide-desktop ml-2 animated animatedFadeInUp fadeInUp" style="animation-delay: 100ms;">
+      <div class=" flex mb-4">
+	    <div>
+          <a href="./html/yesterday.html" class="text-white statebutton">Yesterday</a>
+        </div>
+        <div>
+          <a href="./vaccine/vaccinetracker.html" class="statebutton">Vaccine Tracker</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- shown on desktop -->
+    <section class="hide-mobile ml-2 tab animated animatedFadeInUp fadeInUp" style="animation-delay: 100ms;">
+      <div class=" flex mb-4">
+        <div>
+          <a href="./html/yesterday.html" class="text-white statebutton">Yesterday</a>
+        </div>
+      
+        <div>
+          <a href="./vaccine/vaccinetracker.html" class="text-white statebutton">Vaccine Tracker</a>
+        </div>
+      </div>
+
+    </section>
+    <!-- table header -->
+    <section class="m-1 mt-3 animated animatedFadeInUp fadeInUp" style="animation-delay: 2500ms;"">
+      <div style=" overflow-x: auto;">
+      <table class="table" id="countit">
+        <thead>
+          <tr>
+            <th style="white-space: nowrap">
+              Country Name
+            </th>
+
+            <th>
+              Confirmed
+            </th>
+
+            <th>
+              New Cases
+            </th>
+            <th>
+              Deaths
+            </th>
+            <th>
+              New Deaths
+            </th>
+            <th>
+              Critical
+            </th>
+            <th>
+              Recovered
+            </th>
+
+            <th>
+              Population
+            </th>
+
+            <th>
+              Tests
+            </th>
+
+
+          </tr>
+        </thead>
+
+        <!-- table body -->
+        <tbody>
+
+        </tbody>
+      </table>
+
+    </section>
+  </main>
+
+  <!-- script tags -->
+
+  <!-- jquery.js -->
+  <!-- popper.js -->
+  <!-- bootstrap.js -->
+  <!-- moment.js -->
+  <!-- dataTables.js -->
+  <!-- dataTables formatted-numbers.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/formatted-numbers.js"></script>
+
+  <!-- main script tag -->
+  <script src="./index.js"></script>
+  <script src="./graph.js"></script>
+
+</body>
+
+</html>

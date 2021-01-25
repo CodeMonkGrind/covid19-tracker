@@ -1,0 +1,96 @@
+/* minimum width required 600px to take effect */
+@media only screen and (min-width: 1025px) {
+    .hide-desktop {
+        display: none;
+
+    }
+
+
+}
+
+/* maximum width required to take effect */
+@media only screen and (max-width: 769px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .table td,
+    .table th {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 769px) {
+
+    .level1font {
+        font-size: 3.75vw !important;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .level1font {
+        font-size: 1.5rem;
+    }
+
+    .bgcoloractive {
+        background-color: #132241;
+        border-radius: 5px;
+        padding: 1rem 0;
+    }
+
+    .bgcolorconf:hover {
+        background-color: #331426;
+        border-radius: 5px;
+        padding: 1rem 0;
+
+
+    }
+
+    .bgcolorreco:hover {
+        background-color: #182828;
+        border-radius: 5px;
+        padding: 1rem 0;
+
+
+    }
+
+    .bgcolordeath:hover {
+        background-color: #20222f;
+        border-radius: 5px;
+        padding: 1rem 0;
+
+
+    }
+
+    .bgcolorconf {
+
+        padding: 1rem 0;
+
+
+    }
+
+    .bgcolorreco {
+
+        padding: 1rem 0;
+
+
+    }
+
+    .bgcolordeath {
+
+        padding: 1rem 0;
+
+
+    }
+
+}

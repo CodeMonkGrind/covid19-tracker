@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://ncov2021.com/</loc>
+  <lastmod>2021-01-13T20:47:25+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ncov2021.com/index.html</loc>
+  <lastmod>2021-01-13T20:47:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ncov2021.com/extrasrc/about.html</loc>
+  <lastmod>2021-01-13T21:13:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ncov2021.com/html/yesterday.html</loc>
+  <lastmod>2021-01-13T21:09:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ncov2021.com/html/twodaysago.html</loc>
+  <lastmod>2021-01-13T21:09:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ncov2021.com/html/recent.html</loc>
+  <lastmod>2021-01-13T21:09:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ncov2021.com/vaccine/vaccinetracker.html</loc>
+  <lastmod>2021-01-13T21:06:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

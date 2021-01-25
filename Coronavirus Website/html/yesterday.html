@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180201110-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-180201110-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Coronavirus Update (Live)</title>
+    <meta name="description" content="Live coronavirus dashboard">
+    <meta name="keywords"
+        content="coronavirus, covid-19, tracker, dashboard, stats, prevention, trends, vaccine-tracker, vaccines, coronastats">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ncov2021.com/">
+    <meta property="og:title" content="Coronavirus Tracker">
+    <meta property="og:description" content="Live corona-virus dashboard">
+    <meta property="og:image"
+        content="https://media.discordapp.net/attachments/735527190283812967/769173943143104562/image.jpg?width=664&height=443">
+
+    <link rel="icon" type="image/png" sizes="64x64" href="./assets/img/coronavirus.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../assets/img/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3bc19e2bf5.js"></script>
+    <link rel="stylesheet" href="https://cdn.myrcon.net/fontawesome-pro-5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+    <!-- css links -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../stylesdark.css">
+    <link rel="stylesheet" href="../stylesmobile.css">
+    <link rel="stylesheet" href="../stylo.css">
+    <link rel="manifest" href="../manifest.json">
+
+</head>
+
+
+
+
+<body>
+
+
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg">
+
+                <div class="flex">
+                    <div class="hide-mobile">
+                        <a href="../index.html"><img src="../assets/img/coronavirus.png" width="44px"></a>
+
+                    </div>
+                    <div class="align-middle">
+                        <a class="navbar-brand" href="../index.html">
+                            &nbsp; COVID19</a>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler text-xs" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item  text-center mt-2">
+                            <a class="nav-link" href="../extrasrc/about.html">About</a>
+                        </li>
+
+                        <li class="nav-item active  text-center mt-2">
+                            <a class="nav-link" href="../index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+
+
+                        <!-- <div style="margin-top: 3px;">
+                            <a href="https://ko-fi.com/spaceexplained/posts#linkModal">
+                                <script type="text/javascript" src="https://ko-fi.com/widgets/widget_2.js"></script>
+                                <script type="text/javascript">
+                                    kofiwidget2.init('Buy Me a Coffee', '#293dff', 'spaceexplained');
+                                    kofiwidget2.draw();
+                                </script>
+                            </a>
+                        </div> -->
+
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- <div class="navheadline hide-desktop">
+                <p>The biggest vaccination campaign<br> in the history has begun...</p>
+            </div> -->
+
+        </div>
+    </header>
+
+    <!-- header end ========================= -->
+
+
+    <main>
+
+
+
+
+
+        <section class="ml-3 mb-4 mt-10 last_updated animated animatedFadeInUp fadeInUp"
+            style="animation-delay: 1000ms;"">
+      <p class=" newgray"> Last updated : <span id="last_updated"><i class="fa fa-spinner fa-spin"></i></span>
+            </p>
+        </section>
+
+
+        <section class="hide-desktop ml-2 animated animatedFadeInUp fadeInUp">
+            <div class="flex mb-4">
+                <div>
+                    <a href="../index.html" class="text-white statebutton">Today</a>
+                </div>
+
+                <div>
+                    <a href="../vaccine/vaccinetracker.html" class="text-white statebutton">Vaccine Tracker</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="hide-mobile ml-2 animated animatedFadeInUp fadeInUp">
+            <div class="flex mb-4">
+                <div>
+                    <a href="../index.html" class="text-white statebutton">Today</a>
+                </div>
+                <div>
+                    <a href="../vaccine/vaccinetracker.html" class="text-white statebutton">Vaccine Tracker</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mx-1 animated animatedFadeInUp fadeInUp">
+            <div class="neu1 p-1">
+                <p class="text-left">Total New Confirmed : <span style="color:var(--text-confirmed)">
+                        825,775</span>
+                </p>
+            </div>
+            <div class="neu1 p-1">
+                <p class="text-left">Total New Deaths : <span style="color:#01b3a6">
+                        14,802</span></p>
+            </div>
+        </section>
+
+        <!-- table header -->
+        <section class="mt-3 m-1 animated animatedFadeInUp fadeInUp">
+            <div style="overflow-x: auto;">
+                <table class="table" id="countit">
+                    <thead>
+                        <tr>
+                            <th style="white-space: nowrap">
+                                Country Name
+                            </th>
+
+                            <th>
+                                Total Confirmed
+                            </th>
+
+                            <th>
+                                <i class="fas fa-sort-down"></i> &nbsp; New Confirmed
+                            </th>
+                            <th>
+                                Total Deaths
+                            </th>
+                            <th>
+                                New Deaths
+                            </th>
+                            <th>
+                                Critical
+                            </th>
+                            <th>
+                                Recovered
+                            </th>
+
+                            <th>
+                                Population
+                            </th>
+
+                            <th>
+                                Tests
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- table body -->
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+        </section>
+    </main>
+
+
+
+    <!-- script tags -->
+
+    <!-- jquery.js -->
+    <!-- popper.js -->
+    <!-- bootstrap.js -->
+    <!-- moment.js -->
+    <!-- dataTables.js -->
+    <!-- dataTables formatted-numbers.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/formatted-numbers.js"></script>
+
+    <!-- main script tag -->
+    <script src="./yesterday.js"></script>
+
+</body>
+
+</html>
